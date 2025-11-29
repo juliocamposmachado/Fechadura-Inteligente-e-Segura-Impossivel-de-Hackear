@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fechadura Impossível - A Fechadura Mais Segura do Mundo</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2d3748;
+            --accent: #e53e3e;
+            --light: #f7fafc;
+            --dark: #1a202c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .cta-button:hover {
+            background-color: #c53030;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 80px 0;
+        }
+        
+        section:nth-child(even) {
+            background-color: #edf2f7;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--primary);
+            font-size: 2.5rem;
+        }
+        
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .status {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .status h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .highlight {
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        footer p {
+            font-size: 1.2rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header>
+        <div class="container hero">
+            <h1>A Fechadura Mais Segura do Mundo Já Foi Visionada</h1>
+            <p>Pensada minuciosamente para corrigir todas as falhas conhecidas, impossível de ser hackeada</p>
+            <a href="#contact" class="cta-button">Participe desta Revolução</a>
+        </div>
+    </header>
+
+    <!-- Nossa Visão -->
+    <section id="vision">
+        <div class="container">
+            <h2 class="section-title">Nossa Visão</h2>
+            <div class="content">
+                <p>Criamos uma fechadura que redefine completamente os padrões de segurança no mercado atual. Não se trata apenas de mais um dispositivo inteligente, mas de uma solução completa que nasceu da necessidade de corrigir vulnerabilidades que afetam produtos existentes.</p>
+                <p>Cada detalhe foi analisado com precisão cirúrgica para eliminar pontos fracos que são explorados em fechaduras convencionais. O resultado é um sistema integrado que resiste a todas as técnicas de ataque conhecidas, estabelecendo um novo paradigma em segurança física e digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que levamos em conta -->
+    <section id="considerations">
+        <div class="container">
+            <h2 class="section-title">O Que Levamos em Conta</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Ataques Modernos</h3>
+                    <p>Estudamos profundamente técnicas avançadas como replay, clonagem, jamming e relay attacks que são utilizadas para violar sistemas de segurança atuais.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Falhas Comuns</h3>
+                    <p>Analisamos minuciosamente as vulnerabilidades presentes em dispositivos de mercado para garantir que nossa solução não repita os mesmos erros.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Soluções Inteligentes</h3>
+                    <p>Desenvolvemos abordagens inovadoras que integram segurança mecânica e eletrônica de forma harmoniosa, sem comprometer a usabilidade.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Experiência do Usuário</h3>
+                    <p>Mantivemos o foco em criar uma solução que seja tão fácil de usar quanto segura, eliminando a complexidade desnecessária.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O estágio atual -->
+    <section id="status">
+        <div class="container">
+            <h2 class="section-title">Estágio Atual do Projeto</h2>
+            <div class="status">
+                <h3>A Visão Já Se Tornou Realidade Conceitual</h3>
+                <p>A versão visionada da fechadura já está completamente arquitetada em nível conceitual e técnico. Desenvolvemos uma solução que <span class="highlight">corrige os limites identificados nos concorrentes</span> e se posiciona como referência mundial em segurança.</p>
+                <p>Através de uma abordagem minuciosa, criamos um produto que resiste a todos os métodos de ataque conhecidos, estabelecendo um novo padrão de excelência no setor.</p>
+                <p><span class="highlight">Estamos prontos para a fase de produção</span> - só falta o start monetário para transformar esta visão em realidade física e iniciar a fabricação em escala.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por que é diferente -->
+    <section id="difference">
+        <div class="container">
+            <h2 class="section-title">Por Que É Diferente</h2>
+            <div class="content">
+                <p>Nossa fechadura não é apenas mais um produto no mercado de segurança. É o resultado de uma abordagem completamente nova, onde cada elemento foi projetado com um único objetivo: ser impossível de ser violado.</p>
+                <p>Implementamos segurança em camadas, combinando resistência a ataques físicos e digitais com inovação mecânica sem precedentes. Esta não é uma evolução incremental, mas uma revolução no conceito de proteção.</p>
+                <p>Enquanto outras empresas reagem a vulnerabilidades, nós as prevenimos antes mesmo que possam ser exploradas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Convite -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Junte-se a Esta Revolução</h2>
+            <div class="content" style="text-align: center;">
+                <p>Estamos prontos para transformar esta ideia visionária em realidade concreta. O projeto está completamente arquitetado e validado conceitualmente.</p>
+                <p>Investidores e parceiros estratégicos têm agora a oportunidade única de participar desde o início desta revolução em segurança que redefinirá os padrões do setor.</p>
+                <p>O futuro da proteção começa aqui - e você pode fazer parte desta história desde o primeiro capítulo.</p>
+                <a href="#contact" class="cta-button" style="margin-top: 30px;">Entre em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Fechadura Impossível de Ser Hackeada — Segurança Elevada ao Próximo Nível</p>
+        </div>
+    </footer>
+</body>
+</html>
